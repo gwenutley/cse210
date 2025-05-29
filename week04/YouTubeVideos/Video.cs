@@ -50,13 +50,12 @@ public class Video
         return _comments.Count;
     }
 
-    public void GetAllComments()
+    public void DisplayAllComments()
     {
         Console.WriteLine($"'{_title}' by {_author} is {_length} seconds.");
         foreach (var comment in _comments)
         {
             Console.WriteLine($"{comment.GetAuthorName()}: {comment.GetText()}");
-            Console.WriteLine();
         }
     }
 

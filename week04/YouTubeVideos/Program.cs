@@ -24,53 +24,56 @@ class Program
         video1.AddComment(comment1);
         video1.AddComment(comment2);
         video1.AddComment(comment3);
-        video1.GetAllComments();
+        video1.DisplayAllComments();
+        Console.WriteLine();
 
 
         Video video2 = new Video();
-        video1.SetTitle("Learn how to Program");
-        video1.SetAuthor("Luke Hill");
-        video1.SetLength(571);
+        video2.SetTitle("Learn how to Program");
+        video2.SetAuthor("Luke Hill");
+        video2.SetLength(571);
 
         Comment comment4 = new Comment();
-        comment1.SetText("How does that work?");
-        comment1.SetAuthorName("Tom Small");
+        comment4.SetText("How does that work?");
+        comment4.SetAuthorName("Tom Small");
 
         Comment comment5 = new Comment();
-        comment2.SetText("This video is great");
-        comment2.SetAuthorName("Owen Hart");
+        comment5.SetText("This video is great");
+        comment5.SetAuthorName("Owen Hart");
 
         Comment comment6 = new Comment();
-        comment3.SetText("Nice Work");
-        comment3.SetAuthorName("Jane Webster");
+        comment6.SetText("Nice Work");
+        comment6.SetAuthorName("Jane Webster");
 
-        video1.AddComment(comment4);
-        video1.AddComment(comment5);
-        video1.AddComment(comment6);
-        video1.GetAllComments();
+        video2.AddComment(comment4);
+        video2.AddComment(comment5);
+        video2.AddComment(comment6);
+        video2.DisplayAllComments();
+        Console.WriteLine();
 
 
         Video video3 = new Video();
-        video1.SetTitle("Learn C#");
-        video1.SetAuthor("John Jones");
-        video1.SetLength(342);
+        video3.SetTitle("Learn C#");
+        video3.SetAuthor("John Jones");
+        video3.SetLength(342);
 
         Comment comment7 = new Comment();
-        comment1.SetText("Excellent");
-        comment1.SetAuthorName("Matt Smith");
+        comment7.SetText("Excellent");
+        comment7.SetAuthorName("Matt Smith");
 
         Comment comment8 = new Comment();
-        comment2.SetText("That video helps a lot");
-        comment2.SetAuthorName("Sandy Adams");
+        comment8.SetText("That video helps a lot");
+        comment8.SetAuthorName("Sandy Adams");
 
         Comment comment9 = new Comment();
-        comment3.SetText("I am learning so much!");
-        comment3.SetAuthorName("Claire Olsen");
+        comment9.SetText("I am learning so much!");
+        comment9.SetAuthorName("Claire Olsen");
 
-        video1.AddComment(comment7);
-        video1.AddComment(comment8);
-        video1.AddComment(comment9);
-        video1.GetAllComments();
+        video3.AddComment(comment7);
+        video3.AddComment(comment8);
+        video3.AddComment(comment9);
+        video3.DisplayAllComments();
+        Console.WriteLine();
 
     }
 }
