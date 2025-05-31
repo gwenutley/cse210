@@ -1,11 +1,28 @@
-public class Products 
+public class Product 
 {
     private string _name;
     private string _product_id;
-    private float _price;
+    private double _price;
     private int _quantity;
 
-    public void SetName(string name) 
+    public Product(string name, string productID, double price, int quantity)
+    {
+        name = _name;
+        productID = _product_id;
+        price = _price;
+        quantity = _quantity;
+    }
+
+    public void SetProductID(string productId)
+    {
+        _product_id = productId;
+    }
+
+    public string GetProductID()
+    {
+        return _product_id;
+    }
+    public void SetName(string name)
     {
         _name = name;
     }
@@ -15,9 +32,28 @@ public class Products
         return _name;
     }
 
-    public float CalcTotalCost()
+    public void SetPrice(float price)
     {
-        //multiply the price by the quantity
+        _price = price;
+    }
+
+    public double GetPrice()
+    {
+        return _price;
+    }
+
+    public void SetQuantity(int quantity)
+    {
+        _quantity = quantity;
+    }
+
+    public int GetQuantity()
+    {
+        return _quantity;
+    }
+    public double CalcTotalCost()
+    {
+        return _price * _quantity;
     }
     
 }
