@@ -41,6 +41,12 @@ public class Journal
         {
             string[] parts = line.Split(":");
 
+            if (parts.Length < 3)
+            {
+                Console.WriteLine($"Skipping malformed line: {line}");
+                continue;
+            }
+
             string date = parts[0];
             string prompt = parts[1];
             string textEntry = parts[2];

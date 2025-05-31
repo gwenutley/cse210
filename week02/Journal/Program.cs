@@ -47,11 +47,12 @@ class Program
             {
                 journal.LoadFromFile();
                 Console.WriteLine("Successfully Loaded.");
+                journal.DisplayAll();
             }
             else if (choice == 4)
             {
                 journal.SaveToFile();
-                Console.WriteLine("Successfully saved.")
+                Console.WriteLine("Successfully saved.");
             }
             else if (choice == 5)
             {
