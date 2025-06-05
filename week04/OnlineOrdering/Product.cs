@@ -7,10 +7,10 @@ public class Product
 
     public Product(string name, string productID, double price, int quantity)
     {
-        name = _name;
-        productID = _product_id;
-        price = _price;
-        quantity = _quantity;
+        _name = name;
+        _product_id = productID;
+        _price = price;
+        _quantity = quantity;
     }
 
     public void SetProductID(string productId)

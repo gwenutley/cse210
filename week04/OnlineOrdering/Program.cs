@@ -22,11 +22,26 @@ class Program
         order1.AddProduct(product2);
         order1.AddProduct(product3);
 
-        
-
-        Console.WriteLine($"Total Order Cost: {order1.CalcOrderCost():0.00}");
-        Console.WriteLine($"Pack label: {order1.GetPackingLabel()}");
+        Console.WriteLine($"Total Order Cost: ${order1.CalcOrderCost():0.00}");
+        Console.WriteLine($"Packing label: {order1.GetPackingLabel()}");
         Console.WriteLine($"Ship label: {order1.GetShippingLabel()}");
+        Console.WriteLine();
+
+
+        Address address2 = new Address("456 North street", "Guadalajara", "Jalisco", "Mexico");
+        Customer customer2 = new Customer("Fabian", address2);
+
+        Order order2 = new Order(customer2);
+        order2.AddProduct(product4);
+        order2.AddProduct(product5);
+        order2.AddProduct(product6);
+        order2.AddProduct(product7);
+        order2.AddProduct(product8);
+
+        Console.WriteLine($"Total Order Cost: ${order2.CalcOrderCost():0.00}");
+        Console.WriteLine($"Packing label: {order2.GetPackingLabel()}");
+        Console.WriteLine($"Ship label: {order2.GetShippingLabel()}");
+        Console.WriteLine();
 
     }
 }
